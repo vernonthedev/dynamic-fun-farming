@@ -94,12 +94,12 @@
         <nav class="c-sub-header__nav" role="navigation">
             <ul class="c-sub-header__nav-list">
                 <li class="c-sub-header__nav-item  ">
-                    <a class="c-sub-header__link" href="over-ons.php">
+                    <a class="c-sub-header__link" href="{{ route('about')}}">
                         Who are we
                     </a>
                 </li>
                 <li class="c-sub-header__nav-item  ">
-                    <a class="c-sub-header__link" href="veelgestelde-vragen.html">
+                    <a class="c-sub-header__link" href="{{ route('faq')}}">
                         Frequently Asked Questions
                     </a>
                 </li>
@@ -109,7 +109,7 @@
 </div>
 <header class="o-header  ">
     <div class="o-header__main  js-header-main">
-        <a class="o-header__logo" href="index.php">
+        <a class="o-header__logo" href="{{ route('home')}}">
             <img
                 width="50"
                 height="50"
@@ -121,32 +121,32 @@
             <nav class="c-nav" role="navigation">
                 <ul class="c-nav__list">
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="activiteiten.php">
+                        <a class="c-nav__link" href="{{ route('activities')}}">
                             Activities
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="farmfood.php">
+                        <a class="c-nav__link" href="{{ route('farmfood')}}">
                             FarmFood
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="locaties.php">
-                            Locations
+                        <a class="c-nav__link" href="{{ route('shop')}}">
+                            FarmShop
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="referenties.php">
+                        <a class="c-nav__link" href="{{ route('references')}}">
                             References
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="contact.php">
+                        <a class="c-nav__link" href="{{ route('contact')}}">
                             Contact
                         </a>
                     </li>
                     <li class="c-nav__item  c-nav__item--cart">
-                        <a class="c-cart-button  " href="boeking.php" data-item="0">
+                        <a class="c-cart-button  " href="{{ route('shop')}}" data-item="0">
                             <i class="c-cart-button__icon">
                                 <span class="c-cart-button__icon-placeholder">
                                     <span class="c-cart-button__speed-icons">
@@ -164,7 +164,7 @@
             </nav>
         </div>
         <li class="c-nav__item  c-nav__item--cart c-nav__item--cart-mobile">
-            <a class="c-cart-button  " href="boeking.php" data-item="0">
+            <a class="c-cart-button  " href="{{ route('shop')}}" data-item="0">
                 <i class="c-cart-button__icon">
                     <span class="c-cart-button__icon-placeholder">
                         <span class="c-cart-button__speed-icons">
@@ -206,32 +206,32 @@
             <nav class="c-nav" role="navigation">
                 <ul class="c-nav__list">
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="activiteiten.php" tabindex="-1">
+                        <a class="c-nav__link" href="{{ route('activities')}}" tabindex="-1">
                             Activities
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="farmfood.php" tabindex="-1">
+                        <a class="c-nav__link" href="{{ route('farmfood')}}" tabindex="-1">
                             FarmFood
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="locaties.php" tabindex="-1">
-                            Locations
+                        <a class="c-nav__link" href="{{ route('shop')}}" tabindex="-1">
+                            FarmShop
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="referenties.php" tabindex="-1">
+                        <a class="c-nav__link" href="{{ route('references')}}" tabindex="-1">
                             References
                         </a>
                     </li>
                     <li class="c-nav__item ">
-                        <a class="c-nav__link" href="contact.php" tabindex="-1">
+                        <a class="c-nav__link" href="{{ route('contact')}}" tabindex="-1">
                             Contact
                         </a>
                     </li>
                     <li class="c-nav__item  c-nav__item--cart">
-                        <a class="c-cart-button  " href="boeking.php" data-item="0">
+                        <a class="c-cart-button  " href="{{ route('shop')}}" data-item="0">
                             <i class="c-cart-button__icon">
                                 <span class="c-cart-button__icon-placeholder">
                                     <span class="c-cart-button__speed-icons">
@@ -249,7 +249,7 @@
             </nav>
         </div>
         <li class="c-nav__item  c-nav__item--cart c-nav__item--cart-mobile">
-            <a class="c-cart-button  " href="boeking.php" data-item="0">
+            <a class="c-cart-button  " href="{{ route('shop')}}" data-item="0">
                 <i class="c-cart-button__icon">
                     <span class="c-cart-button__icon-placeholder">
                         <span class="c-cart-button__speed-icons">
@@ -279,7 +279,7 @@
 </header>
 <div class="o-overlay-menu  js-overlay-menu" id="overlay-menu" hidden>
     <div class="o-overlay-menu__bar">
-        <a class="o-overlay-menu__logo" href="index.php" tabindex="-99">
+        <a class="o-overlay-menu__logo" href="{{ route('home')}}" tabindex="-99">
             <img
                 width="50"
                 height="50"
@@ -298,7 +298,7 @@
     </div>
     <nav class="o-overlay-menu__nav" role="navigation">
         <div class="o-overlay-menu__cart">
-            <a class="c-cart-button   c-cart-button--animate" href="boeking.php" data-item="0">
+            <a class="c-cart-button   c-cart-button--animate" href="{{ route('shop')}}" data-item="0">
                 <i class="c-cart-button__icon">
                     <span class="c-cart-button__icon-placeholder">
                         <span class="c-cart-button__speed-icons">
@@ -314,72 +314,53 @@
         </div>
         <ul class="o-overlay-menu__list">
             <li class="o-overlay-menu__item  is-active ">
-                <a class="o-overlay-menu__link" href="index.php">
+                <a class="o-overlay-menu__link" href="{{ route('home')}}">
                     Home
                 </a>
             </li>
             <li class="o-overlay-menu__item ">
-                <a class="o-overlay-menu__link" href="activiteiten.php">
+                <a class="o-overlay-menu__link" href="{{ route('activities')}}">
                     Activities
                 </a>
             </li>
             <li class="o-overlay-menu__item ">
-                <a class="o-overlay-menu__link" href="farmfood.php">
+                <a class="o-overlay-menu__link" href="{{ route('farmfood')}}">
                     FarmFood
                 </a>
             </li>
             <li class="o-overlay-menu__item ">
-                <a class="o-overlay-menu__link" href="referenties.php">
+                <a class="o-overlay-menu__link" href="{{ route('references')}}">
                     References
                 </a>
             </li>
             <li class="o-overlay-menu__item ">
-                <a class="o-overlay-menu__link" href="contact.php">
+                <a class="o-overlay-menu__link" href="{{ route('contact')}}">
                     Contact
                 </a>
             </li>
         </ul>
         <ul class="o-overlay-menu__sublist">
             <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="locaties.php">
-                    Locations
+                <a class="o-overlay-menu__sublink" href="{{ route('shop')}}">
+                    FarmShop
                 </a>
             </li>
             <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="over-ons.php">
+                <a class="o-overlay-menu__sublink" href="{{ route('about')}}">
                     About Us
                 </a>
             </li>
             <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="veelgestelde-vragen.html">
+                <a class="o-overlay-menu__sublink" href="{{ route('about')}}">
                     Frequently Asked Questions
                 </a>
             </li>
             <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="nieuws.html">
-                    News
+                <a class="o-overlay-menu__sublink" href="{{ route('blog')}}">
+                    Blog
                 </a>
             </li>
-            <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="algemene-voorwaarden.html">
-                    Terms and Conditions
-                </a>
-            </li>
-            <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="privacyverklaring.html">
-                    Privacy Policy
-                </a>
-            </li>
-            <li class="o-overlay-menu__subitem ">
-                <a class="o-overlay-menu__sublink" href="disclaimer.html">
-                    Disclaimer
-                </a>
-            </li>
-            <li class="o-overlay-menu__subitem">
-                <a class="o-overlay-menu__sublink" href="sitemap.html">
-                    Sitemap
-                </a>
-            </li>
+
         </ul>
     </nav>
 </div>
@@ -591,3 +572,91 @@
         </div>
     </div>
 </aside>
+
+
+<script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+      {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://farmfun.be"
+    }    ]
+}
+        </script>
+        <script type="text/javascript">
+    (function(e,t,o,n,p,r,i){e.visitorGlobalObjectAlias=n;e[e.visitorGlobalObjectAlias]=e[e.visitorGlobalObjectAlias]||function(){(e[e.visitorGlobalObjectAlias].q=e[e.visitorGlobalObjectAlias].q||[]).push(arguments)};e[e.visitorGlobalObjectAlias].l=(new Date).getTime();r=t.createElement("script");r.src=o;r.async=true;i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)})(window,document,'../diffuser-cdn.app-us1.com/diffuser/diffuser.js',"vgo");
+    vgo('setAccount', '68831642');
+    vgo('setTrackByDefault', true);
+
+    vgo('process');
+        </script>
+        <script defer type="text/javascript" src="js/manifest8fec.js?id=59cad3ae328f232cc6381495a8d66768"></script>
+        <script defer type="text/javascript" src="js/vendore724.js?id=4c2ae8725a39b063a58520c8ff7e244a"></script>
+        <script defer type="text/javascript" src="js/site/app4233.js?id=49bdb89e1c686c465fb7327dd0a6b90b"></script>
+        <script>
+    var lastCheck = new Date();
+    var caffeineSendDrip = function () {
+        var ajax = window.XMLHttpRequest
+            ? new XMLHttpRequest
+            : new ActiveXObject('Microsoft.XMLHTTP');
+
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState === 4 && ajax.status === 204) {
+                lastCheck = new Date();
+            }
+        };
+
+        ajax.open('GET.html', '/genealabs/laravel-caffeine/drip');
+        ajax.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        ajax.send();
+    };
+
+    setInterval(function () {
+        caffeineSendDrip();
+    }, 300000);
+
+    if (2000 > 0) {
+        setInterval(function () {
+            if (new Date() - lastCheck >= 7082000) {
+                location.reload(true);
+            }
+        }, 2000);
+    }
+        </script>
+        <script>
+    var lastCheck = new Date();
+    var caffeineSendDrip = function () {
+        var ajax = window.XMLHttpRequest
+            ? new XMLHttpRequest
+            : new ActiveXObject('Microsoft.XMLHTTP');
+
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState === 4 && ajax.status === 204) {
+                lastCheck = new Date();
+            }
+        };
+
+        ajax.open('GET.html', '/genealabs/laravel-caffeine/drip');
+        ajax.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        ajax.send();
+    };
+
+    setInterval(function () {
+        caffeineSendDrip();
+    }, 300000);
+
+    if (2000 > 0) {
+        setInterval(function () {
+            if (new Date() - lastCheck >= 7082000) {
+                location.reload(true);
+            }
+        }, 2000);
+    }
+        </script>
+
+</script>
